@@ -1,8 +1,12 @@
-.test {
+/* .test {
   border: 1px solid black;
   height: 100px;
   width: 100px;
   text-align: center;
   display: flex;
   align-items: center;
+} */
+
+body {
+  background-color: rgb(100, 100, 100);
 }

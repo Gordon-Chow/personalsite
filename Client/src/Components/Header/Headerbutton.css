@@ -1,17 +1,29 @@
 .buttons {
-  height: 40px;
-  width: 100px;
-  display :flex;
-  align-content: center;
-  background: none;
-  border: none;
+  font-size: 15px;
+  /* font-weight:700; */
+  padding: 0;
+  /* padding-bottom: 10px; */
+  background-color: transparent;
   outline: none;
-  text-align: center;
-  align-items: center;
+  border: none;
+  /* height:30px; */
+  /* margin: 0px 8px; */
+  padding: 0px 25px;
+  display:flex;
+  align-items:center;
+  color:black;
   text-decoration: none;
-  color: black;
-  border-bottom: 3px solid black;
-  margin-right: 10px;
-  justify-content: center;
-  /* position: relative; */
+  /* text-transform: capitalize; */
+  border-bottom: 5px solid transparent;
+
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+.buttons:hover {
+  border-bottom: 5px solid black;
+  color: white;
+}
+
+.selected {
+  border-bottom: 5px solid black;
 }

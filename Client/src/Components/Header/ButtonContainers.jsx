@@ -10,12 +10,13 @@ class ButtonContainers extends React.Component {
   }
 
   render() {
-    const list = ['Home', 'About', 'Project', 'Resume', 'Contact']
-    console.log(list)
+    const list = ['Home', 'About', 'Projects', 'Resume', 'Contact']
+    // console.log(list)
+    // console.log('2', this.props)
     return (
       <div className={styles.buttonDiv}>
         {list.map(button =>{
-          return <Headerbutton button={button}/>
+          return <Headerbutton button={button} selected={this.props.selected} selectorfunction={this.props.selectorfunction}/>
         })}
       </div>
     )

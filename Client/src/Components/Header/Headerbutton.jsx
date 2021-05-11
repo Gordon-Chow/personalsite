@@ -10,8 +10,19 @@ class Headerbutton extends React.Component {
 
   render() {
     console.log(this.props)
+
+    let isSelected = '';
+    // console.log(this.props.button === this.props.selected)
+    if (this.props.button === this.props.selected) {
+      isSelected = styles.selected;
+    }
+    if(this.props.button === 'Home') {
+      return (
+        <Link className={`${styles.buttons} ${isSelected}`} onClick={()=> this.props.selectorfunction(this.props.button)} to={`/`}>{this.props.button}</Link>
+      )
+    }
     return (
-        <Link className={styles.buttons}to={`/${this.props.button}`}>{this.props.button}</Link>
+        <Link className={`${styles.buttons} ${isSelected}`} onClick={()=> this.props.selectorfunction(this.props.button)} to={`/${this.props.button}/`}>{this.props.button}</Link>
     )
   }
 }

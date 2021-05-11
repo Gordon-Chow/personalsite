@@ -1,0 +1,27 @@
+#sectionOne {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+#sectionTwo {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+}
+
+.testbox {
+  width: 100px;
+  height: 100px;
+  background: purple;
+  position: relative;
+  animation-name: imove;
+  animation-duration: 10s;
+}
+
+@keyframes imove {
+  from {top: 0px;
+  background:purple;}
+  to { top: 100px;
+  background: red; }
+}
